@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divs</title>
+    <style>
+        .parent{
+            width: 700px;
+            height: 500px;
+            background: pink;
+            margin: auto;
+        }
+        .child1{
+            width: 90%;
+            height: 30%;
+            background-color: red;
+            margin: auto;
+            padding: 3rem 0 0 0;
+        }
+        .child1-subchild{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-color: blue;
+            rotate: 45deg;
+        }
+        .child2{
+            width: 30%;
+            height: 30%;
+            margin: auto;
+            background-color: green;
+            clip-path: circle();
+        }
+        .star{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            padding: 1.5rem;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        .child3{
+            width: 80%;
+            height: 30%;
+            background-color: yellow;
+            margin: auto;
+        }
+        .moon{
+            width: 60%;
+            height: 60%;
+            margin: auto;
+            background-color: white;
+            clip-path: circle();
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <div class="child1-subchild"></div>
+        </div>
+        <div class="child2">
+            <div class="star">
+                <div class="moon"></div>
+            </div>
+        </div>
+        <div class="child3"></div>
+    </div>
+</body>
+</html>
